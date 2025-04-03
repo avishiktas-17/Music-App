@@ -1,0 +1,310 @@
+/* Importing Fonts */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #121212;
+  color: white;
+  text-align: center;
+}
+
+/* Header Navigation */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background: #1db954;
+  position: relative;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.nav-logo {
+  width: 50px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.logo-text {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+
+.btn {
+  background: white;
+  color: #1db954;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background: #eee;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+  gap: 50px;
+}
+
+.hero-content {
+  max-width: 500px;
+  text-align: left;
+}
+
+.hero-content h1 {
+  font-size: 40px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  margin: 20px 0;
+}
+
+.hero-image img {
+  width: 300px;
+}
+
+/* Features Section */
+.features {
+  padding: 80px 50px;
+  background: #181818;
+}
+
+.features h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.feature-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.feature {
+  background: #252525;
+  padding: 20px;
+  width: 200px;
+  border-radius: 10px;
+}
+
+/* Pricing Section */
+.pricing {
+  padding: 80px;
+  background: #181818;
+}
+
+.pricing h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.pricing-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.plan {
+  background: #252525;
+  padding: 20px;
+  width: 250px;
+  border-radius: 10px;
+}
+
+.plan h3 {
+  font-size: 24px;
+}
+
+.plan p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+/* Contact Page */
+.contact {
+  padding: 80px;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 400px;
+  margin: auto;
+}
+
+.contact input, .contact textarea {
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+}
+
+.contact button {
+  padding: 12px;
+  font-size: 18px;
+  background: #1db954;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.contact button:hover {
+  background: #17a74a;
+}
+
+/* Login Page */
+.login {
+  padding: 80px;
+  text-align: center;
+}
+
+.login h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.login form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 350px;
+  margin: auto;
+}
+
+.login input {
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+}
+
+.login button {
+  padding: 12px;
+  font-size: 18px;
+  background: #1db954;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.login button:hover {
+  background: #17a74a;
+}
+
+.login p {
+  margin-top: 15px;
+  font-size: 16px;
+}
+
+.login a {
+  color: #1db954;
+  text-decoration: none;
+}
+
+.login a:hover {
+  text-decoration: underline;
+}
+
+/* Sign-Up Page */
+.signup {
+  padding: 80px;
+  text-align: center;
+}
+
+.signup h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.signup form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 350px;
+  margin: auto;
+}
+
+.signup input {
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+}
+
+.signup button {
+  padding: 12px;
+  font-size: 18px;
+  background: #1db954;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.signup button:hover {
+  background: #17a74a;
+}
+
+.signup p {
+  margin-top: 15px;
+  font-size: 16px;
+}
+
+.signup a {
+  color: #1db954;
+  text-decoration: none;
+}
+
+.signup a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background: #1db954;
+  padding: 20px;
+  margin-top: 50px;
+}
