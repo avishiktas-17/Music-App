@@ -1,50 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MusicApp - Home</title>
-    <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MusicApp - Home</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- Navigation Bar -->
-    <header>
-        <div class="logo-container">
-            <img src="logo2.png" alt="Music App Logo" class="nav-logo">
-            <span class="logo-text">MusicApp</span>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="features.html">Features</a></li>
-                <li><a href="pricing.html">Pricing</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="login.html">Login</a></li>
-            </ul>
-        </nav>
-        <button class="btn" onclick="location.href='pricing.html'">Get Started</button>
-    </header>
+        <header>
+        <div class="logo-container">
+            <img src="logo2.png" alt="Music App Logo" class="nav-logo">
+            <span class="logo-text">MusicApp</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="features.html">Features</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+        <button class="btn" onclick="location.href='pricing.html'">Get Started</button>
+    </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Stream Your Favorite Music Anytime, Anywhere</h1>
-            <p>Discover, listen, and enjoy millions of tracks for free.</p>
-            <button class="btn" onclick="location.href='features.html'">Explore Features</button>
-        </div>
-        <div class="hero-image">
-            <img src="logo2.png" alt="Music App">
-        </div>
-    </section>
+        <section class="hero">
+        <div class="hero-content">
+            <h1>Stream Your Favorite Music Anytime, Anywhere</h1>
+            <p>Discover, listen, and enjoy millions of tracks for free.</p>
+            <button class="btn" onclick="location.href='features.html'">Explore Features</button>
+        </div>
+        <div class="hero-image">
+            <img src="logo2.png" alt="Music App">
+        </div>
+    </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 MusicApp. All rights reserved.</p>
-    </footer>
+        <footer>
+        <p>&copy; 2025 MusicApp. All rights reserved.</p>
+    </footer>
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/12.1.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.1.0/firebase-analytics.js";
+
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyBWry9ah3GLaZ8zP5GK7hnf70ofD57dz3Y",
+            authDomain: "music-app-911ab.firebaseapp.com",
+            projectId: "music-app-911ab",
+            storageBucket: "music-app-911ab.firebasestorage.app",
+            messagingSenderId: "264481848945",
+            appId: "1:264481848945:web:c385c96eb65c2bd1d725d0",
+            measurementId: "G-QWS56L5LEC"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+    </script>
 
 </body>
 </html>
